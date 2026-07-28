@@ -1,26 +1,5 @@
-'''while True:
-    Account = 100000
-    card = input("Enter the card : ")
-    if card == "c":
-        print("Welcome Hemalatha")
-    else:
-        print("Invalid card")
-        pwd = int(input("Enter the Password : "))
-        if pwd == 1234:
-            options = input("Options : ")
-            if options == "Balance Enq":
-                print("Account balance is : ",Account)
-            elif options == "Withdraw":
-                money = int(input("Enter the amount : "))
-                print("Remaining account balance is : ",Account - money)
-            else:
-                print("Invalid option")
-        else:
-            print("Incorrect password")'''
-
-
 # Basic ATM Management System 
-'''while True:
+while True:
     amount = 100000
     card = input("Insert the card:")
     if card == "c":
@@ -44,21 +23,34 @@
 
 #Attendence Report
 n = int(input("No of Students: "))
-c1 = 0
-c2 = 0
+present = 0
+absent = 0
 for i in range(1,n+1):
     s = input(f"Student {i} (p/a) : ")
     if s == "p":
-        c1 += 1
+        present += 1
         i += 1
     else:
-        c2 += 1
+        absent += 1
         i += 1
 print("Total students : ",n)
-print("Total presenties : ",c1)
-print("Total absenties : ",c2)
+print("Total presenties : ",present)
+print("Total absenties : ",absent)
 
-        
+#BMI Calculator
+while True:
+    height = float(input("Enter the height: "))
+    weight = float(input("Enter the weight: "))
+    bmi = weight/(height)**2
+    print("bmi : ",bmi)
+    if bmi <= 18.5:
+        print("Under weight")
+    elif bmi > 18.5 and bmi <= 24.5:
+        print("Healthy weight")
+    elif bmi > 24.5 and bmi <= 29.5:
+        print("Over weight")
+    else:
+        print("obesity")        
         
 
 
